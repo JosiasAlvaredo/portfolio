@@ -8,6 +8,11 @@ body {
   box-sizing: border-box;
 }
 
+header{
+  margin: -20;
+  padding: 0;
+  background-color: #0a0d13;
+}
 /* Navbar */
 .navbar {
   background-color: #1e1e1e !important;
@@ -23,9 +28,17 @@ body {
   color: #f1f1f1 !important; 
 }
 
+#navbar-example2 .dropdown-menu {
+  background-color: #333 !important;
+}
+
 #navbar-example2 .dropdown-item {
   color: #f1f1f1 !important;
   background-color: #333 !important;
+}
+
+#navbar-example2 .dropdown-item:hover{
+  background-color: #444444 !important;
 }
 
 
@@ -190,7 +203,7 @@ section:nth-of-type(even) {
 
 /* Footer */
 footer {
-  margin-top: 40px;
+  margin-top: 0px;
   text-align: center;
   background-color: #1e1e1e;
   color: #94a3b8;
