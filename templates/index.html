@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Portfolio</title>
+
+    <link rel="stylesheet" href="../static/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"/>
+    <script src="../static/main.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav id="navbar-example2" class="navbar bg-trasnparent px-3 mb-3">
+        <a class="navbar-brand" href="#">Josías Alvaredo</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#about">Sobre mí</a></li>
+              <li><a class="dropdown-item" href="#education">Educación</a></li>
+              <li><a class="dropdown-item" href="#experience">Esperiencia</a></li>
+              <li><a class="dropdown-item" href="#skills">Habilidades</a></li>
+              <li><a class="dropdown-item" href="/templates/login.html">login</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Banner -->
+      <div class="banner-carousel-wrapper position-relative">
+        <div id="bannerCarousel" class="carousel slide mt-5" data-bs-ride="carousel" data-bs-interval="3000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../static/img/vscode.png" class="d-block w-100 banner-img" alt="Imagen 1">
+            </div>
+            <div class="carousel-item">
+              <img src="../static/img/godot.png" class="d-block w-100 banner-img" alt="Imagen 2">
+            </div>
+            <div class="carousel-item">
+              <img src="../static/img/canva.png" class="d-block w-100 banner-img" alt="Imagen 3">
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-picture">
+          <img src="../static/img/ja.jpeg" alt="Foto de Perfil" class="rounded-circle">
+        </div>
+      </div>
+
+      <section class="banner">
+        <h1>Bienvenido a mi Portfolio</h1>
+        <p>Soy Josías Emanuel Alvaredo un Full Stack Developer jr</p>
+
+        <div class="social-icons">
+          <a href="https://github.com/JosiasAlvaredo" 
+            target="_blank"
+            data-bs-toggle="popover"
+            data-bs-placement="bottom"
+            data-bs-content="Github Profesional">
+            <img src="../static/img/github.png" alt="GitHub">
+          </a>
+
+          <a href="https://www.linkedin.com/in/josias-alvaredo-a64661305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            data-bs-toggle="popover"
+            data-bs-placement="bottom"
+            data-bs-content="LinkedIn">
+            <img src="../static/img/linkedin.png" alt="LinkedIn">
+          </a>
+
+          <a href="mailto:jealvaredo@gmail.com"
+            data-bs-toggle="popover"
+            data-bs-placement="bottom"
+            data-bs-content="Contactame">
+            <img src="../static/img/gmail.png" alt="Gmail">
+          </a>
+        </div>
+      </section>
+
+    </header>
+
+    
+
+    <!-- Acerca de mí -->
+    <section id="about">
+      <h2 class ="section-title">Sobre mí</h2>
+      <p>
+        ¡Hola, bienvenido de nuevo a mi portfolio! Soy Josías, un desarrollador enfocado en el frontend y apasionado por crear experiencias digitales que sean tanto funcionales como agradables de usar. Me gusta cuidar cada detalle del diseño y del código, buscando que las páginas web no solo se vean bien, sino que también ofrezcan una navegación clara, rápida y accesible.
+      </p>
+      <p>
+        A lo largo de mi formación aprendí a trabajar con HTML, CSS, JavaScript, Python y MySQL, y disfruto unir el diseño con la programación para construir proyectos bien pensados desde lo visual y lo técnico. Valoro mucho la organización, la legibilidad del código y la experiencia del usuario final.
+      </p>
+      <p>
+        Además, tengo una gran pasión por el desarrollo de videojuegos con Godot, donde encuentro un espacio para experimentar con ideas creativas, historias y mecánicas que combinan arte y tecnología. Ese tipo de proyectos me permite explorar nuevas formas de resolver problemas y seguir aprendiendo desde un lado más libre y expresivo.
+      </p>
+      <p>
+        Me considero una persona curiosa, con ganas de seguir creciendo y aprendiendo constantemente. Busco participar en proyectos donde pueda aplicar lo que sé, mejorar cada día y aportar una mirada equilibrada entre lo técnico y lo creativo.
+      </p>
+    </section>
+
+    <!-- Educacion -->
+    <section id="education">
+      <h2 class ="section-title">Educación</h2>
+      <ul>
+        <li>
+          <strong>Instituto Técnico Renault</strong> – Nivel Secundario (Ciclo Orientado en Programación)  
+          <span>2023 - 2026</span>
+        </li>
+        <li>
+          <strong>Instituto América</strong> – Nivel Secundario (Ciclo Básico)  
+          <span>2020 - 2022</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Experiencia -->
+    <section id="experience">
+      <h2 class ="section-title">Experiencia Laboral</h2>
+      <article>
+        <h3>Diseñador Gráfico Independiente – Gráfica Sublime</h3>
+        <p><strong>2022 - Actualidad</strong></p>
+        <p>
+          Trabajo como diseñador gráfico independiente en mi emprendimiento y realizo encargos personalizados para la empresa Sublime.  
+          Diseño productos como tazas, remeras, libretas o mockups adaptados a cada cliente.
+        </p>
+        <p>
+          Utilizo herramientas como Photoshop, Illustrator y Canva para garantizar resultados de calidad listos para impresión.
+        </p>
+      </article>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2 class ="section-title">Habilidades</h2>
+      <h3>Técnicas</h3>
+      <ul class="tech-skills">
+        <li>Diseño gráfico (Photoshop, Illustrator, Corel, Canva)</li>
+        <li>Desarrollo web (HTML, React)</li>
+        <li>Fotografía</li>
+        <li>Inglés (A2)</li>
+      </ul>
+
+      <h3>Blandas</h3>
+      <ul class="soft-skills">
+        <li>Liderazgo</li>
+        <li>Creatividad</li>
+        <li>Trabajo en equipo</li>
+      </ul>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="projects">
+
+      <h2 class ="section-title">Proyectos</h2>
+      <div class="cards-container">
+        <div class="card" style="width: 18rem;">
+          <img src="../static/img/godot.png" class="card-img-top" alt="Proyecto Godot">
+          <div class="card-body">
+            <h5 class="card-title">Videojuego 2D con Godot</h5>
+            <p class="card-text">Juego estilo RPG con historia y pixel art propio.</p>
+            <a href="https://taplink.cc/whispersson" class="btn btn-primary" target="_blank">Mas información</a>
+          </div>
+        </div>
+        
+              <div class="card" style="width: 18rem;">
+          <img src="../static/img/canva.png" class="card-img-top" alt="Diseños Canva">
+          <div class="card-body">
+            <h5 class="card-title">Diseños gráficos</h5>
+            <p class="card-text">Mockups, tazas y remeras personalizados con estilo profesional</p>
+            <a href="https://www.instagram.com/sublime_sus_ideas" class="btn btn-primary" target="_blank">Mas información</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Mi Portfolio</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
