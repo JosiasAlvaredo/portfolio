@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../static/style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"/>
     <script src="../static/main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -17,7 +19,7 @@
         <a class="navbar-brand" href="#">Josías Alvaredo</a>
         <ul class="nav nav-pills">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Índice</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#about">Sobre mí</a></li>
               <li><a class="dropdown-item" href="#education">Educación</a></li>
@@ -91,7 +93,7 @@
         ¡Hola, bienvenido de nuevo a mi portfolio! Soy Josías, un desarrollador enfocado en el frontend y apasionado por crear experiencias digitales que sean tanto funcionales como agradables de usar. Me gusta cuidar cada detalle del diseño y del código, buscando que las páginas web no solo se vean bien, sino que también ofrezcan una navegación clara, rápida y accesible.
       </p>
       <p>
-        A lo largo de mi formación aprendí a trabajar con HTML, CSS, JavaScript, Python y MySQL, y disfruto unir el diseño con la programación para construir proyectos bien pensados desde lo visual y lo técnico. Valoro mucho la organización, la legibilidad del código y la experiencia del usuario final.
+        A lo largo de mi formación aprendí a trabajar con <span class="destacado">HTML</span>, <span class="destacado">CSS</span>, <span class="destacado">JavaScript</span>, <span class="destacado">Python</span> y <span class="destacado">MySQL</span>, y disfruto unir el diseño con la programación para construir proyectos bien pensados desde lo visual y lo técnico. Valoro mucho la organización, la legibilidad del código y la experiencia del usuario final.
       </p>
       <p>
         Además, tengo una gran pasión por el desarrollo de videojuegos con Godot, donde encuentro un espacio para experimentar con ideas creativas, historias y mecánicas que combinan arte y tecnología. Ese tipo de proyectos me permite explorar nuevas formas de resolver problemas y seguir aprendiendo desde un lado más libre y expresivo.
@@ -103,18 +105,22 @@
 
     <!-- Educacion -->
     <section id="education">
-      <h2 class ="section-title">Educación</h2>
-      <ul>
-        <li>
-          <strong>Instituto Técnico Renault</strong> – Nivel Secundario (Ciclo Orientado en Programación)  
-          <span>2023 - 2026</span>
-        </li>
-        <li>
-          <strong>Instituto América</strong> – Nivel Secundario (Ciclo Básico)  
-          <span>2020 - 2022</span>
-        </li>
-      </ul>
+      <h2 class="section-title">Educación</h2>
+      <div class="education-list">
+        <div class="education-item">
+          <h3>Instituto Técnico Renault</h3>
+          <p>Nivel Secundario — Ciclo Orientado en Programación</p>
+          <span class="year">2023 - 2026</span>
+        </div>
+
+        <div class="education-item">
+          <h3>Instituto América</h3>
+          <p>Nivel Secundario — Ciclo Básico</p>
+          <span class="year">2020 - 2022</span>
+        </div>
+      </div>
     </section>
+
 
     <!-- Experiencia -->
     <section id="experience">
@@ -134,22 +140,28 @@
 
     <!-- Skills -->
     <section id="skills">
-      <h2 class ="section-title">Habilidades</h2>
-      <h3>Técnicas</h3>
-      <ul class="tech-skills">
-        <li>Diseño gráfico (Photoshop, Illustrator, Corel, Canva)</li>
-        <li>Desarrollo web (HTML, React)</li>
-        <li>Fotografía</li>
-        <li>Inglés (A2)</li>
-      </ul>
+      <h2 class="section-title">Habilidades</h2>
 
-      <h3>Blandas</h3>
-      <ul class="soft-skills">
-        <li>Liderazgo</li>
-        <li>Creatividad</li>
-        <li>Trabajo en equipo</li>
-      </ul>
+      <div class="skills-group">
+        <h3>Técnicas</h3>
+        <ul class="skills-list tech-skills">
+          <li>Diseño gráfico (Photoshop, Illustrator, Corel, Canva)</li>
+          <li>Desarrollo web (HTML, CSS, React)</li>
+          <li>Fotografía (Foto-productos, Foto-deportiva)</li>
+          <li>Inglés (B1 sin certificar)</li>
+        </ul>
+      </div>
+
+      <div class="skills-group">
+        <h3>Blandas</h3>
+        <ul class="skills-list soft-skills">
+          <li>Liderazgo</li>
+          <li>Creatividad</li>
+          <li>Trabajo en equipo</li>
+        </ul>
+      </div>
     </section>
+
 
     <!-- Proyectos -->
     <section id="projects">
@@ -175,7 +187,7 @@
         </div>
 
         <div class="card" style="width: 18rem;">
-          <img src="../static/img/canva.png" class="card-img-top" alt="Diseños Canva">
+          <img src="../static/img/oniet.png" class="card-img-top" alt="Diseños Canva">
           <div class="card-body">
             <h5 class="card-title">Participación en olimpiadas</h5>
             <p class="card-text">He participado en las ONIET organizadas por la UBP</p>

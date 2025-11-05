@@ -1,5 +1,4 @@
 body {
-  font-family: 'Roboto', sans-serif;
   margin: 0 !important;
   padding: 0 !important;
   background-color: #0f172a; 
@@ -8,11 +7,24 @@ body {
   box-sizing: border-box;
 }
 
+p, li, a, span {
+  font-weight: 400;
+  line-height: 1.6;
+}
+
 header{
   margin: -20;
   padding: 0;
-  background-color: #0a0d13;
+  background-color: #262626;
 }
+
+.destacado{
+  font-family: 'Plus Jakarta Sans', sans-serif; 
+  font-weight: 700;
+  color: #38bdf8;
+  letter-spacing: 0.5px;
+}
+
 /* Navbar */
 .navbar {
   background-color: #1e1e1e !important;
@@ -45,7 +57,7 @@ header{
 /* Banner */
 .banner {
   text-align: center;
-  background: #0a0d13; 
+  background: #1e1e1e; 
   color: #e2e8f0;
   padding: 1% 0;
 }
@@ -56,7 +68,7 @@ header{
 
 .banner p {
   font-size: 1.2rem;
-  color: #94a3b8;
+  color: #38bdf8;
 }
 
 .banner-img {
@@ -83,7 +95,6 @@ header{
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid #94a3b8;
 }
 
 .social-icons {
@@ -116,8 +127,8 @@ header{
 }
 
 .popover {
-  background-color: #e5e5e5; /* gris clarito */
-  color: #222; /* texto oscuro */
+  background-color: #6b6b6b;
+  color: #222;
   border: none;
   border-radius: 8px;
   padding: 6px 10px;
@@ -151,6 +162,7 @@ header{
 
 /* Secciones */
 .section-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 2rem;
   margin-bottom: 20px;
   text-align: center;
@@ -170,24 +182,112 @@ section:nth-of-type(even) {
   padding-left: 10%;
   padding-right: 10%;
   text-align:justify;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
-#education{
-  padding-left: 10%;
-  padding-right: 10%;
-  text-align:center;
+#education {
+  text-align: center;
+  background-color: #1e3a66; 
+  color: #f1f1f1;
+  padding: 60px 10%;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.education-item {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 20px 30px;
+  width: 100%;
+  max-width: 600px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-item:hover {
+  transform: translateY(-4px);
+}
+
+.education-item h3 {
+  color: #ffd700;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.education-item p {
+  margin: 0;
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+.education-item .year {
+  display: block;
+  margin-top: 8px;
+  font-weight: 600;
+  color: #ccc;
+  font-size: 0.9rem;
 }
 
 #experience{
   padding-left: 10%;
   padding-right: 10%;
   text-align:justify;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
-#skills{
-  padding-left: 10%;
-  padding-right: 10%;
-  text-align:justify;
+#skills {
+  padding: 80px 10%;
+  text-align: center;
+  background-color: #1e3358; 
+}
+
+#skills .section-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+#skills h3 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #38bdf8;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.skills-list li {
+  background-color: rgba(56, 189, 248, 0.1);
+  color: #e2e8f0;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.skills-list li:hover {
+  box-shadow: 0 4px 10px rgba(56, 189, 248, 0.15);
 }
 
 .card{
