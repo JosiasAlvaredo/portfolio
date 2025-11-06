@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Panel de edición</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container" style="padding: 40px;">
+    <h1>Editar Portfolio</h1>
+    <a href="{{ url_for('logout') }}" style="color:#38bdf8;">Cerrar sesión</a>
+
+    <h2>Habilidades actuales</h2>
+    <ul>
+      {% for skill in data.skills %}
+        <li>{{ skill }}</li>
+      {% endfor %}
+    </ul>
+
+    <form method="POST">
+      <input type="text" name="habilidad" placeholder="Nueva habilidad">
+      <button type="submit">Agregar</button>
+    </form>
+
+    <hr>
+
+    <h2>Proyectos</h2>
+    <ul>
+      {% for p in data.projects %}
+        <li><strong>{{ p.titulo }}</strong>: {{ p.descripcion }}</li>
+      {% endfor %}
+    </ul>
+
+    <form method="POST">
+      <input type="text" name="titulo" placeholder="Título del proyecto" required>
+      <input type="text" name="descripcion" placeholder="Descripción" required>
+      <input type="text" name="link" placeholder="Enlace (opcional)">
+      <button type="submit">Agregar proyecto</button>
+    </form>
+  </div>
+</body>
+</html>

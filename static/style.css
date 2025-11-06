@@ -34,6 +34,17 @@ header{
 
 .navbar-brand {
   color: #f1f1f1 !important;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-logo {
+  width: 35px;
+  height: auto;
+  border-radius: 6px;
+  filter: invert(1);
 }
 
 #navbar-example2 .nav-link.dropdown-toggle {
@@ -49,9 +60,10 @@ header{
   background-color: #333 !important;
 }
 
-#navbar-example2 .dropdown-item:hover{
+#navbar-example2 .dropdown-item:hover {
   background-color: #444444 !important;
 }
+
 
 
 /* Banner */
@@ -291,7 +303,9 @@ section:nth-of-type(even) {
 }
 
 .card{
-  background-color: #1e293b;
+  background-color: #1e293b !important;
+  color: #f1f1f1 !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .cards-container {
@@ -299,6 +313,11 @@ section:nth-of-type(even) {
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  
 }
 
 /* Footer */
